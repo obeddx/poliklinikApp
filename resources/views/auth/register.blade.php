@@ -98,7 +98,7 @@
           <select class="form-control @error('role') is-invalid @enderror" name="role" required>
             <option value="" disabled selected>Pilih Role</option>
             <option value="pasien" {{ old('role') == 'pasien' ? 'selected' : '' }}>Pasien</option>
-            <option value="dokter" {{ old('role') == 'dokter' ? 'selected' : '' }}>Dokter</option>
+            {{-- <option value="dokter" {{ old('role') == 'dokter' ? 'selected' : '' }}>Dokter</option> --}}
           </select>
           <div class="input-group-append">
             <div class="input-group-text">
